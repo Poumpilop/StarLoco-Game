@@ -50,6 +50,8 @@ public class CommandPlayer {
             } else if(command(msg, "walkfast")) {
                 player.walkFast = !player.walkFast;
                 return true;
+            } else  if (command(msg, "vie")) {
+                return commandVie(player, msg);
             } else  if(command(msg, "vip")) {
                 player.sendMessage(player.getLang().trans("command.commandplayer.vip"));
                 return true;
@@ -478,6 +480,18 @@ public class CommandPlayer {
         if (nbPlayer > 0)
             mess += player.getLang().trans("command.commandplayer.info.online", String.valueOf(nbPlayer));
         player.sendMessage(mess);
+        return true;
+    }
+
+    private static boolean commandVie(Player player, String msg) {
+        if(player.getCurPdv() == player.getMaxPdv()){
+            player.sendMessage(player.getLang().trans("command.commandplayer.vie.error"));
+            return true;
+        }
+        player.setPdv(player.getMaxPdv());
+        if (player.isOnline())
+            SocketManager.GAME_SEND_STATS_PACKET(player);
+        player.sendMessage(player.getLang().trans("command.commandplayer.vie.success"));
         return true;
     }
 
