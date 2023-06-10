@@ -28,7 +28,16 @@ command.commandadmin.fightblock1: "Vous ne pouvez plus combattre jusqu'à nouvel
 command.commandadmin.unlearn.spell: "Vous venez de désapprendre un métier, veuillez vous reconnecter."
 
 command.commandplayer.vote.ok: "Vous pouvez dès à présent voter, <b><a href='#YOUR_SITE'>cliquez ici</a></b> !"
-command.commandplayer.default: "Les commandes disponibles sont :\n <b>.help</b> - Permet d'ouvrir un dialogue qui explique le serveur.\n <b>.infos</b> - Permet d'obtenir des informations sur le serveur.\n <b>.deblo</b> - Permet de vous débloquer en vous téléportant à une cellule libre.\n <b>.staff</b> - Permet de voir les membres du staff connectés.\n <b>.all</b> - Permet d'envoyer un message à tous les joueurs.\n <b>.noall</b> - Permet de ne plus recevoir les messages du canal général.\n <b>.maitre</b> - Pour vos mules \n <b>.walkfast</b> - Pour désactiver la marche instante \n <b>.start</b> - Pour revenir à Astrub"
+command.commandplayer.default: "Les commandes disponibles sont :
+                                \n <b>.help</b> - Permet d'ouvrir un dialogue qui explique le serveur.
+                                \n <b>.infos</b> - Permet d'obtenir des informations sur le serveur.
+                                \n <b>.deblo</b> - Permet de vous débloquer en vous téléportant à une cellule libre.
+                                \n <b>.staff</b> - Permet de voir les membres du staff connectés.
+                                \n <b>.all</b> - Permet d'envoyer un message à tous les joueurs.
+                                \n <b>.noall</b> - Permet de ne plus recevoir les messages du canal général.
+                                \n <b>.maitre</b> - Pour vos mules \n <b>.walkfast</b> - Pour désactiver la marche instante 
+                                \n <b>.start</b> - Pour revenir à Astrub
+                                \n <b>.vie</b> - Régénère votre vie à 100%"
 command.commandplayer.noall: "Votre canal général est désactivé."
 command.commandplayer.allwait: "Tu dois attendre encore #1 seconde(s)."
 command.commandplayer.all.on: "Vous avez activé le canal général."
@@ -60,6 +69,8 @@ command.commandplayer.pass.error: "Votre joueur ne possède pas de maitre."
 command.commandplayer.interval.error: "Le chiffre indiqué ne correspond pas, veuillez ressayer avec un chiffre valide."
 command.commandplayer.interval.master: "Vous devez être dans un groupe avec un maitre pour utiliser cette commande."
 command.commandplayer.interval: "Vous venez de configurer un interval, votre joueur rentrera dans le combat après ce delai. (en seconde)"
+command.commandplayer.vie.success: "Ta vie a été restaurée."
+command.commandplayer.vie.error: "Ta vie est déjà à 100%."
 
 dynamic.formuleofficiel.exp: "Vous avez gagné #1 d'expérience supplémentaire grâce à votre bonus d'abonnement."
 
